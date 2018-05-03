@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<title>Simple Art Game</title>
+<style type="text/css">
+	body {
+                color: white;
+		background: #222;
+		margin: 0;
+	}
+	.thumbnails img {
+		height: 100px;
+		border: 4px solid #555;
+		padding: 1px;
+		margin: 0 10px 10px 0;
+	}
+
+	.thumbnails img:hover {
+		border: 4px solid #00ccff;
+		cursor:pointer;
+	}
+
+	.preview img {
+		border: 4px solid #444;
+		padding: 1px;
+		width: 600px;
+	}
+</style>
+</head>
+
+<body >
+<div class="game" align="center">
+<h3>Simple HTML Photo Game with JavaScript</h3>
+
+<table border=1 width=200 cellpadding=10>
+  <tr>
+    <td>
+
+<div class="thumbnails">
+
+ <img onmouseover="preview.src=img1.src" name="img1" src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Bouguereau_Nymphs_and_Satyr_MMA_cr.jpg" alt="" />
+
+ <img onmouseover="preview.src=img2.src" name="img2" src="https://upload.wikimedia.org/wikipedia/commons/b/b9/François_Boucher_028.jpg" alt="" />
+
+</div>
+</td>
+<td>
+
+<div class="preview" align="center">
+	<img name="preview" src="images/img1.jpg" alt=""/>
+</div>
+</td>
+</tr>
+</table>
+
+</div>
+
+</body>
+</html>
